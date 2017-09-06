@@ -1,0 +1,30 @@
+<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+<com.flurgle.camerakit.CameraView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:camerakit="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        camerakit:ckPermissions="picture"
+        camerakit:ckFacing="back"
+        camerakit:ckFlash="off"
+        camerakit:ckFocus="continuous"
+        camerakit:ckMethod="standard"
+        camerakit:ckZoom="off"
+        camerakit:ckJpegQuality="100"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+            android:id="@+id/button"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_photo"
+            android:tint="@android:color/white" />
+
+</FrameLayout>
